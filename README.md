@@ -2,8 +2,8 @@
 Juan Pablo Arango Gaviria
 
 > [!NOTE]
-> Deploy to vercel at: <https://juan-pablo-arango-portafolio.vercel.app/> 
-> Repository where the deployment was made: <https://github.com/JuanPablo-A/Juan-Pablo-Arango-Portafolio> 
+> - Deploy to vercel at: <https://juan-pablo-arango-portafolio.vercel.app/> 
+> - Repository where the deployment was made: <https://github.com/JuanPablo-A/Juan-Pablo-Arango-Portafolio> 
 
 
 ## Getting Started
