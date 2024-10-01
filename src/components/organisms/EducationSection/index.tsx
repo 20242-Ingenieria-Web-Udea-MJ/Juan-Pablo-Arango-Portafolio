@@ -2,6 +2,10 @@ import { TextSecondary, TitleSecondary } from '@/components/atoms/Titles'
 import EducationCard from '@/components/molecules/EducationCard'
 import React from 'react'
 
+/**
+ * The education data.
+ * @type {Object[]}
+ */
 const education = [
   {
     university: 'Maria Josefa Marulanda',
@@ -20,6 +24,11 @@ const education = [
 
 ]
 
+/**
+ * A section component to display education information.
+ * 
+ * @returns {JSX.Element} The rendered education section component.
+ */
 export default function EducationSection() {
   return (
     <div className='flex flex-col gap-6 items-center'>
@@ -28,6 +37,7 @@ export default function EducationSection() {
             <TextSecondary text='This section highlights my academic journey, I have cultivated important skills in both technical and interpersonal areas, which complement my professional profile and prepare me for future challenges in the tech industry.'/>
         </div>
         <div className='flex flex-col items-center'>
+          {/* education cards */}
           {education.map((item, index) => (
             <EducationCard key={index} university={item.university} role={item.role} date={item.date} title={item.title} description={item.description}/>
           ))}

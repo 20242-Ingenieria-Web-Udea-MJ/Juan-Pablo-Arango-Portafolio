@@ -1,6 +1,15 @@
 import { TextPrincipal, TextPrincipalFill, TextSecondary, TitleTertiary } from '@/components/atoms/Titles'
 import React from 'react'
 
+/**
+ * Props for the EducationCard component.
+ * @typedef {Object} educationProps
+ * @property {string} university - The name of the university.
+ * @property {string} role - The role or position held.
+ * @property {string} date - The date or duration of the role.
+ * @property {string} title - The title of the education card.
+ * @property {string} description - The description of the role or education.
+*/
 type educationProps = {
   university: string;
   role: string;
@@ -9,6 +18,12 @@ type educationProps = {
   description: string;
 };
 
+/**
+ * A card component to display education information.
+ * 
+ * @param {educationProps} props - The props for the component.
+ * @returns {JSX.Element} The rendered education card component.
+ */
 export default function EducationCard({ university, role, date, title, description }: educationProps) {
   return (
     <div className='lg:grid lg:grid-cols-2 xl:grid-cols-[1fr_2fr] lg:gap-20 bg-white h-auto lg:h-72 xl:h-auto md:h-72 border-b border-solid justify-center items-center w-4/5 lg:w-full pb-2'>

@@ -1,5 +1,6 @@
 import { Item } from "@/types";
 
+// The data for the carousel items in the portfolio section .
 const firstItems: Item[] = [
     { id: '1', img:'/React.webp', title: 'ReactJS projects', description: `It's a repository focused on making projects using React JS`,},
     { id: '2', img:'/Pag-1.png', title: 'Project 1 - GuitarLA', description: 'In this project, a guitar shopping cart was created. The initial hooks were used, and later the project was migrated from JavaScript to TypeScript.' },

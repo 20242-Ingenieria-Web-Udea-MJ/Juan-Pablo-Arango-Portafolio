@@ -4,6 +4,11 @@ import SkillBar from '@/components/molecules/SkillBar'
 import { otherLenguages, programmingLenguages } from '@/data/lenguages'
 import React from 'react'
 
+/**
+ * The left sidebar component.
+ * 
+ * @returns {JSX.Element} The rendered left sidebar component.
+ */
 export default function LeftSidebar() {
   return (
     <div className='flex flex-col min-h-screen w-50 md:w-80 bg-white items-center gap-2 inset-y-0 left-0'>

@@ -2,6 +2,10 @@
 import { TextPrincipalBold } from '@/components/atoms/Titles';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaDribbble, FaGithub } from 'react-icons/fa';
 
+/**
+ * A list of social links avaibles.
+ * @type {Object[]}
+ */
 const socialLinks = [
     { icon: <FaGithub />, link: "https://github.com/Juanpablo-a" },
   { icon: <FaFacebookF />, link: "https://www.facebook.com/juanpablo.arango.739/" },
@@ -11,10 +15,16 @@ const socialLinks = [
   { icon: <FaDribbble />, link: "https://dribbble.com" },
 ];
 
+/**
+ * A component to render the social links.
+ * 
+ * @returns {JSX.Element} The rendered social links component.
+ */
 const SocialLinks = () => {
   return (
     <div className="fixed top-20 flex flex-col justify-center items-center space-y-4">
       <TextPrincipalBold text='Links'/>
+      {/* Iterate over social links */}
       {socialLinks.map((social, index) => (
         <a
           key={index}

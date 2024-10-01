@@ -3,6 +3,10 @@ import React from 'react'
 import EducationCard from '../../molecules/KnowledgeCard'
 import { FaLaptopCode, FaDatabase, FaBuffer, FaDev, FaTools, FaRobot   } from 'react-icons/fa';
 
+/**
+ * The knowledge data.
+ * @type {Object[]}
+ */
 const knowledge = [
     {
         icon: <FaDev className='h-full w-full'/>,
@@ -36,6 +40,11 @@ const knowledge = [
     },
 ]
 
+/**
+ * A section component to display knowledge information.
+ * 
+ * @returns {JSX.Element} The rendered knowledge section component.
+ */
 export default function KnowledgeSection() {
   return (
     <div className='flex flex-col gap-5 items-center'>
